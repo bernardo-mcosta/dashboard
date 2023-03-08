@@ -1,0 +1,41 @@
+* {
+  border: 0.5px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+  background-color: blue;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.upper-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.upper-header .right-container {
+  text-align: right;
+}
+
+.lower-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.lower-header .left-container {
+  display: flex;
+}
+
+.main {
+  background-color: rgb(193, 202, 223);
+}
