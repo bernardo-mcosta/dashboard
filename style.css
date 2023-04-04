@@ -136,6 +136,56 @@ body {
   width: 70px;
 }
 
+/* Main */
+
 .main {
   background-color: rgb(193, 202, 223);
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
+}
+
+.main p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.main .projects {
+  grid-column: 1/2;
+}
+
+.main .side-main {
+  grid-column: 2/3;
+}
+
+.main .announcements,
+.trending {
+  margin-bottom: 30px;
+}
+
+.main .announ-container,
+.trending-container {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.announ h4 {
+  font-size: 12px;
+}
+
+.announ p {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(163, 163, 163);
+  margin: 1rem 0;
 }
