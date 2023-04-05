@@ -175,6 +175,12 @@ body {
   flex-direction: column;
 }
 
+.trending-container,
+.announ-container,
+.project {
+  box-shadow: 0px 2px 3px rgb(175, 175, 175);
+}
+
 .main p {
   font-weight: 100;
   font-size: 12px;
@@ -190,7 +196,7 @@ hr {
 .trending-content {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .trending img {
@@ -208,6 +214,13 @@ hr {
 
 /* Main - Projects */
 
+.project-container {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 20px;
+}
+
 .project {
   background-color: white;
   border-radius: 10px;
@@ -216,6 +229,7 @@ hr {
   grid: 1fr auto / 1rem 1fr;
   border-left: 8px solid rgb(1, 180, 1);
   height: 120px;
+  margin-bottom: 1rem;
 }
 
 .project-content {
@@ -227,11 +241,12 @@ hr {
 }
 
 .project-actions {
-  gap: 10px;
+  gap: 25px;
   display: flex;
   justify-content: flex-end;
   grid-row: 2/3;
   grid-column: 1/-1;
+  cursor: pointer;
 }
 
 .project img {
