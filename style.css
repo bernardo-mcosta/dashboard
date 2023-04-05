@@ -139,11 +139,11 @@ body {
 /* Main */
 
 .main {
-  background-color: rgb(193, 202, 223);
+  background-color: rgb(224, 227, 235);
   padding: 1.5rem 2rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
 }
 
 .main h4 {
@@ -175,7 +175,7 @@ body {
   flex-direction: column;
 }
 
-.side-main p {
+.main p {
   font-weight: 100;
   font-size: 12px;
   color: #808080;
@@ -204,4 +204,36 @@ hr {
 
 .trending-container {
   gap: 10px;
+}
+
+/* Main - Projects */
+
+.project {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid: 1fr auto / 1rem 1fr;
+  border-left: 8px solid rgb(1, 180, 1);
+  height: 120px;
+}
+
+.project-content {
+  grid-column: 1/-1;
+}
+
+.project-title {
+  font-weight: 600;
+}
+
+.project-actions {
+  gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+}
+
+.project img {
+  width: 25px;
 }
